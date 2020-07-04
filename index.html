@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES</title>
+</head>
+<body>
+    <div>First div</div>
+    <div>Second div</div>
+    <div>Third div</div>
+
+    <script type="module">
+        import $ from "./index.js";
+
+        $("div").each(function(){
+            console.log(this)
+        })
+    </script>
+</body>
+</html>
